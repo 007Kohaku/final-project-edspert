@@ -20,94 +20,39 @@
                 <a href="#" class="block py-2 px-3 text-write rounded md:bg-transparent md:p-0 hover:text-primary" aria-current="page">Home</a>
               </li>
               <li>
-                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-write md:border-0 hover:text-primary md:p-0 md:w-auto">
-                  Products
-                  <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <button class="relative flex jutify-center items-center bg-transparent focus:outline-none text-write rounded hover:text-primary group">
+                  <span>Products</span
+                  ><svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                   </svg>
-                </button>
-                <!-- Dropdown menu -->
-                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                  <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                    </li>
-                    <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100">
-                        Dropdown<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-                        </svg>
-                      </button>
-                      <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My downloads</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Rewards</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="py-1">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+
+                  <div class="absolute hidden group-focus:block top-full min-w-full w-max bg-white shadow-md mt-1 rounded">
+                    <ul class="text-left border rounded text-write">
+                      <li class="px-4 py-1 hover:bg-gray-100 border-b">Product 1</li>
+                      <li class="px-4 py-1 hover:bg-gray-100 border-b">Product 2</li>
+                      <li class="px-4 py-1 hover:bg-gray-100 border-b">Product 3</li>
+                      <li class="px-4 py-1 hover:bg-gray-100 border-b">Product 4</li>
+                    </ul>
                   </div>
-                </div>
+                </button>
               </li>
               <li>
-                <button
-                  id="dropdownNavbarLink"
-                  data-dropdown-toggle="dropdownNavbar"
-                  class="flex items-center justify-between w-full py-2 px-3 text-write hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 md:w-auto"
-                >
-                  Resources
-                  <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <button class="relative flex jutify-center items-center bg-transparent focus:outline-none text-write rounded hover:text-primary group">
+                  <span>Resources</span
+                  ><svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                   </svg>
-                </button>
-                <!-- Dropdown menu -->
-                <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                  <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
-                    <li>
-                      <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-                    </li>
-                    <li aria-labelledby="dropdownNavbarLink">
-                      <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100">
-                        Dropdown<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
-                        </svg>
-                      </button>
-                      <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
-                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Overview</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">My downloads</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Billing</a>
-                          </li>
-                          <li>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Rewards</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="py-1">
-                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
-                  </div>
-                </div>
-              </li>
 
+                  <div class="absolute hidden group-focus:block top-full min-w-full w-max bg-white shadow-md mt-1 rounded">
+                    <ul class="text-left border rounded text-write">
+                      <li class="px-4 py-1 hover:bg-gray-100 border-b">Resources 1</li>
+                      <li class="px-4 py-1 hover:bg-gray-100 border-b">Resources 2</li>
+                      <li class="px-4 py-1 hover:bg-gray-100 border-b">Resources 3</li>
+                      <li class="px-4 py-1 hover:bg-gray-100 border-b">Resources 4</li>
+                    </ul>
+                  </div>
+                </button>
+              </li>
               <li>
                 <a href="#" class="block py-2 px-3 text-write rounded md:hover:bg-transparent hover:text-primary md:p-0">Pricing</a>
               </li>
@@ -148,7 +93,7 @@
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
               </svg>
             </div>
-            <input type="search" id="default-search" class="block w-full p-4 ps-10 text-xl text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-primary" placeholder="Search" required />
+            <input type="search" id="default-search" class="block w-full p-4 ps-10 text-xl text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:outline-primary" placeholder="Search" required />
           </div>
         </ul>
       </div>
@@ -738,6 +683,7 @@
       </div>
     </footer>
     <!-- Footer end -->
+
     <script src="src/script.js"></script>
   </body>
 </html>

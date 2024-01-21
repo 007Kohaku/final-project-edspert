@@ -666,6 +666,10 @@ video {
   top: 0px;
 }
 
+.top-full {
+  top: 100%;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -787,6 +791,10 @@ video {
 
 .ms-2\.5 {
   margin-inline-start: 0.625rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
 }
 
 .mt-16 {
@@ -978,6 +986,15 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-screen-xl {
@@ -1318,10 +1335,6 @@ video {
   grid-auto-flow: column dense;
 }
 
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
 .flex-row {
   flex-direction: row;
 }
@@ -1512,22 +1525,6 @@ video {
 
 .gap-3 {
   gap: 0.75rem;
-}
-
-.gap-8 {
-  gap: 2rem;
-}
-
-.gap-11 {
-  gap: 2.75rem;
-}
-
-.gap-14 {
-  gap: 3.5rem;
-}
-
-.gap-20 {
-  gap: 5rem;
 }
 
 .-space-x-px > :not([hidden]) ~ :not([hidden]) {
@@ -2076,14 +2073,13 @@ video {
   background-color: rgb(249 245 255 / var(--tw-bg-opacity));
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2337,11 +2333,6 @@ video {
 
 .text-\[20px\] {
   font-size: 20px;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -2922,6 +2913,10 @@ video {
   outline-offset: 2px;
 }
 
+.focus\:outline-primary:focus {
+  outline-color: #7F56D9;
+}
+
 .focus\:ring-2:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -2933,17 +2928,16 @@ video {
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
 }
 
-.focus\:ring-primary:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(127 86 217 / var(--tw-ring-opacity));
-}
-
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.group:focus .group-focus\:block {
+  display: block;
 }
 
 @media (min-width: 640px) {
