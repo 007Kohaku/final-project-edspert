@@ -8,13 +8,13 @@
   </head>
   <body class="bg-screen">
     <!-- Header section start-->
-    <nav class="bg-white w-full top-0 start-0 shadow-sm">
+    <header class="bg-white w-full top-0 start-0 shadow-sm">
       <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4">
         <div class="inline-flex">
           <a href="https://www.edspert.id/" class="flex items-center space-x-3 rtl:space-x-reverse pr-4">
             <img src="https://www.edspert.id/assets/img/1677731348logo_Edspert.webp" class="h-8" alt="Flowbite Logo" />
           </a>
-          <div class="items-center justify-between w-full flex md:w-auto pl-5" id="navbar-sticky">
+          <nav id="navbar-hamburger" class="hidden items-center justify-between w-full md:w-auto pl-5 md:block" id="navbar-sticky">
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               <li>
                 <a href="#" class="block py-2 px-3 text-write rounded md:bg-transparent md:p-0 hover:text-primary" aria-current="page">Home</a>
@@ -57,16 +57,16 @@
                 <a href="#" class="block py-2 px-3 text-write rounded md:hover:bg-transparent hover:text-primary md:p-0">Pricing</a>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <button type="button" class="text-write focus:outline-none font-medium rounded-lg px-4 py-2 text-center tracking-wide hover:text-primary">Log In</button>
           <button type="button" class="text-white bg-primary hover:bg-darkpurple focus:outline-none font-medium rounded-lg px-[18px] py-[9px] text-center tracking-wide">Sign up</button>
           <button
-            data-collapse-toggle="navbar-sticky"
+            data-collapse-toggle="navbar-hamburger"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-sticky"
+            class="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-write rounded-lg hover:bg-primary hover:text-white focus:outline-none md:hidden"
+            aria-controls="navbar-hamburger"
             aria-expanded="false"
           >
             <span class="sr-only">Open main menu</span>
@@ -76,7 +76,7 @@
           </button>
         </div>
       </div>
-    </nav>
+    </header>
     <!-- Header section end-->
 
     <!-- Hero section start -->
@@ -84,7 +84,7 @@
       <div>
         <ul class="space-y-[25px] text-center">
           <span class="px-4 py-1 rounded-full bg-[#F3EBFF] text-primary font-medium">Intensive Bootcamp</span>
-          <h1 class="text-darkpurple text-6xl font-bold">Upskill your Talent!</h1>
+          <h1 class="text-darkpurple text-6xl font-bold">Upskill Your Talent!</h1>
           <h2 class="text-darkpurple text-2xl">Kembangkan potensimu bersama Edspert</h2>
           <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only"></label>
           <div class="relative mx-[90px]">
@@ -102,7 +102,7 @@
 
     <!-- Card section start -->
     <section class="mt-20 flex flex-wrap space-x-4 justify-center">
-      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg border-gray-200 mb-10">
+      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg hover:shadow-xl border-gray-200 mb-10">
         <img src="img/card-img.png" alt="img-description" class="rounded-t-[16px]" />
         <div class="mx-8 my-4 flex flex-col gap-1">
           <h1 class="text-[20px] font-semibold text-gray-900">Web Development Bootcamp</h1>
@@ -166,7 +166,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg border-gray-200 mb-10">
+      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg hover:shadow-xl border-gray-200 mb-10">
         <img src="img/card-img.png" alt="img-description" class="rounded-t-[16px]" />
         <div class="mx-8 my-4 flex flex-col gap-1">
           <h1 class="text-[20px] font-semibold text-gray-900">Web Development Bootcamp</h1>
@@ -230,7 +230,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg border-gray-200 mb-10">
+      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg hover:shadow-xl border-gray-200 mb-10">
         <img src="img/card-img.png" alt="img-description" class="rounded-t-[16px]" />
         <div class="mx-8 my-4 flex flex-col gap-1">
           <h1 class="text-[20px] font-semibold text-gray-900">Web Development Bootcamp</h1>
@@ -294,7 +294,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg border-gray-200 mb-10">
+      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg hover:shadow-xl border-gray-200 mb-10">
         <img src="img/card-img.png" alt="img-description" class="rounded-t-[16px]" />
         <div class="mx-8 my-4 flex flex-col gap-1">
           <h1 class="text-[20px] font-semibold text-gray-900">Web Development Bootcamp</h1>
@@ -358,7 +358,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg border-gray-200 mb-10">
+      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg hover:shadow-xl border-gray-200 mb-10">
         <img src="img/card-img.png" alt="img-description" class="rounded-t-[16px]" />
         <div class="mx-8 my-4 flex flex-col gap-1">
           <h1 class="text-[20px] font-semibold text-gray-900">Web Development Bootcamp</h1>
@@ -422,7 +422,7 @@
           </div>
         </div>
       </div>
-      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg border-gray-200 mb-10">
+      <div class="flex flex-col w-[384px] rounded-[16px] shadow-lg hover:shadow-xl border-gray-200 mb-10">
         <img src="img/card-img.png" alt="img-description" class="rounded-t-[16px]" />
         <div class="mx-8 my-4 flex flex-col gap-1">
           <h1 class="text-[20px] font-semibold text-gray-900">Web Development Bootcamp</h1>
