@@ -1327,6 +1327,14 @@ video {
   grid-auto-flow: column dense;
 }
 
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -2929,6 +2937,11 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2947,12 +2960,24 @@ video {
     display: block;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-rows-4 {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
@@ -2983,14 +3008,28 @@ video {
     padding: 0px;
   }
 
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:hidden {
-    display: none;
+  .lg\:grid {
+    display: grid;
+  }
+
+  .lg\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
